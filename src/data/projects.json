@@ -5,7 +5,7 @@
     "description": "This is a project An application allowing users to play the drums made to learn the latest languages by building an app.",
     "skills": ["HTML", "CSS", "JavaScript"],
     
-    "source": "https://www.github.com"
+    "source": "https://github.com/Charanx7/drumkit.git"
   },
   {
     "title": "FrontLine",
@@ -13,7 +13,7 @@
     "description": "An interactive interior design application allowing users to visualize and customize room layouts, furniture, and decor in real-time.",
     "skills": ["React", "HTML","CSS","JavaScript"],
     
-    "source": "https://www.github.com"
+    "source": "https://github.com/Charanx7/frontline.git"
   },
   {
     "title": "Personal Finance Traker",
@@ -21,6 +21,6 @@
     "description": "A user-friendly application that helps to manage their income and expenses.",
     "skills": ["HTML", "CSS", "JavaScript"],
     
-    "source": "https://www.github.com"
+    "source": "https://github.com/Charanx7/charan.git"
   }
 ]
