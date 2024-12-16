@@ -1,5 +1,3 @@
-@import "../../vars.css";
-
 .container {
   color: var(--color-text);
   margin-top: 120px;
@@ -10,19 +8,22 @@
   width: 100vw;
   padding: 58px 10%;
   gap: 10px;
+  opacity: 1; /* Ensure the container is visible */
 }
 
 .text h2 {
-  font-size: 80px;
+  font-size: 60px;
   font-weight: 700;
   letter-spacing: 4px;
 }
 
 .text p {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 400;
   letter-spacing: 2px;
 }
+
+
 
 .links {
   display: flex;
@@ -36,6 +37,7 @@
   display: flex;
   align-items: center;
   gap: 25px;
+  transition: transform 0.3s ease, color 0.3s ease; /* Smooth hover effect */
 }
 
 .link a {
@@ -44,6 +46,35 @@
   font-size: 30px;
   font-weight: 400;
   letter-spacing: 1.5px;
+  transition: color 0.3s ease, text-shadow 0.3s ease; /* Smooth color transition */
+}
+
+.link:hover a {
+  color: var(--color-primary); /* Change the color on hover */
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Add subtle text shadow on hover */
+}
+
+.link img {
+  width: 50px; /* Adjust size for smaller images */
+  height: 50px;
+  object-fit: contain;
+  transition: transform 0.3s ease; /* Smooth hover effect for images */
+}
+
+.link:hover img {
+  transform: scale(1.1); /* Slightly increase the size of the image on hover */
+}
+
+.link p {
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  transition: color 0.3s ease, transform 0.3s ease; 
+}
+
+.link:hover p {
+  color: var(--color-primary); /* Change color on hover */
+  transform: translateY(-5px); /* Slight upward movement on hover */
 }
 
 @media screen and (max-width: 830px) {

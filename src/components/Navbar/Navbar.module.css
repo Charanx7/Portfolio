@@ -1,4 +1,4 @@
-@import "../../vars.css";
+/* @import "../../vars.css";
 
 .navbar {
   position: relative;
@@ -79,4 +79,130 @@
     display: flex;
     z-index: 1;
   }
+} */
+
+@import "../../vars.css";
+
+/* Navbar Base Styles */
+.navbar {
+  position: relative; /* Fixed position for sticky navbar */
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 10%;
+  z-index: 10;
+  background-color: transparent; /* Starts transparent */
+  transition: background-color 0.4s ease, box-shadow 0.4s ease;
 }
+
+.navbar.scrolled {
+  background-color: rgba(25, 55, 109, 0.9); /* Appears on scroll */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Elevation effect */
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--color-text);
+  transition: color 0.3s ease;
+}
+
+.title:hover {
+  color: var(--color-primary); /* Highlight on hover */
+}
+
+/* Menu Button (for mobile) */
+.menuBtn {
+  display: none;
+}
+
+/* Menu Container */
+.menu {
+  display: flex;
+}
+
+/* Menu Items */
+.menuItems {
+  display: flex;
+  gap: 47px;
+  list-style: none;
+  opacity: 1; /* For animation */
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.menuItems a {
+  font-size: 25px;
+  color: var(--color-text);
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.menuItems a:hover {
+  color: var(--color-primary); /* Smooth color change */
+  transform: scale(1.1); /* Slight zoom effect */
+}
+
+.menuItems a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background: var(--color-primary);
+  transition: width 0.3s ease;
+}
+
+.menuItems a:hover::after {
+  width: 100%; /* Underline effect on hover */
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 830px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .menu {
+    position: absolute;
+    right: 0;
+    margin-right: 10%;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 15px;
+    z-index: 3;
+  }
+
+  .menuBtn {
+    display: block;
+    cursor: pointer;
+  }
+
+  .menuItems {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background: rgb(25, 55, 109);
+    background: linear-gradient(0deg, rgba(25, 55, 109, 0.8) 0%, rgba(25, 55, 109, 1) 100%);
+    border-radius: 10px;
+    padding: 20px 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+  }
+
+  .menuOpen {
+    display: flex !important;
+    opacity: 1;
+    transform: translateY(0); /* Menu slides into view */
+  }
+}
+

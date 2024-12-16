@@ -1,26 +1,26 @@
 [
   {
-    "title": "Project A",
-    "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node"],
-    "demo": "https://www.example.com",
+    "title": "DrumKit",
+    "imageSrc": "projects/out.png",
+    "description": "This is a project An application allowing users to play the drums made to learn the latest languages by building an app.",
+    "skills": ["HTML", "CSS", "JavaScript"],
+    
     "source": "https://www.github.com"
   },
   {
-    "title": "Project B",
-    "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node", "Sass"],
-    "demo": "https://www.example.com",
+    "title": "FrontLine",
+    "imageSrc": "projects/out2.png",
+    "description": "An interactive interior design application allowing users to visualize and customize room layouts, furniture, and decor in real-time.",
+    "skills": ["React", "HTML","CSS","JavaScript"],
+    
     "source": "https://www.github.com"
   },
   {
-    "title": "Project C",
-    "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node"],
-    "demo": "https://www.example.com",
+    "title": "Personal Finance Traker",
+    "imageSrc": "projects/out3.png",
+    "description": "A user-friendly application that helps to manage their income and expenses.",
+    "skills": ["HTML", "CSS", "JavaScript"],
+    
     "source": "https://www.github.com"
   }
 ]

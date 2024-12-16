@@ -1,4 +1,5 @@
 @import "../../vars.css";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
 .container {
   color: var(--color-text);
@@ -52,7 +53,7 @@
 
 .skill p {
   font-size: 25px;
-  font-family: var(--font-roboto);
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
 }
 
@@ -79,12 +80,13 @@
 }
 
 .historyItemDetails {
-  font-family: var(--font-roboto);
+  font-family: "Poppins", sans-serif;
 }
 
 .historyItemDetails h3 {
   font-size: 30px;
   font-weight: 500;
+  
 }
 
 .historyItemDetails p {

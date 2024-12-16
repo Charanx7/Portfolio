@@ -12,19 +12,28 @@
     "imageSrc": "skills/react.png"
   },
   {
-    "title": "Node",
+    "title": "JavaScript",
     "imageSrc": "skills/node.png"
   },
+
   {
-    "title": "GraphQL",
-    "imageSrc": "skills/graphql.png"
+    "title": "C#",
+    "imageSrc": "skills/c.png"
   },
   {
-    "title": "MongoDB",
-    "imageSrc": "skills/mongodb.png"
+    "title": ".NET",
+    "imageSrc": "skills/d.png"
   },
+
   {
-    "title": "Figma",
-    "imageSrc": "skills/figma.png"
+    "title": "SQL",
+    "imageSrc": "skills/s.png"
+  },
+
+  {
+    "title": "Python",
+    "imageSrc": "skills/p.png"
   }
+
+  
 ]
